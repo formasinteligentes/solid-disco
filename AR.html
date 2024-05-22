@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene
+      mindar-image="imageTargetSrc: https://dl.dropbox.com/scl/fi/opwlm257x67o4uvowo6ry/COLIMA.mind?rlkey=0fwyw6p9uiehdrwgo2lce0htf&st=i0bpnlgm&dl=0;"
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-camera
+        position="0 0 0"
+        look-controls="enabled: false"
+        cursor="fuse: false; rayOrigin: mouse;"
+        raycaster="far: 10000; objects: .clickable"
+        camera=""
+        rotation=""
+        wasd-controls=""
+      >
+      </a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-entity>
+          <a-image
+            src="https://scontent.fgdl14-1.fna.fbcdn.net/v/t39.30808-6/444899993_1005923220890476_76504842279187736_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG3QymlRvz-jxoSHqkSI0gF51g1uvVFPL3nWDW69UU8vX_OfpTnsZ_BiDKZjxV566HEolyNespxmUAF2CSylsv8&_nc_ohc=8dVzb5Wfr5EQ7kNvgHkO9LC&_nc_ht=scontent.fgdl14-1.fna&oh=00_AYBVNBmJ0EtE-UMyy7zDlI--DB1MaPDGI27vunzp48NTVg&oe=6653E396"
+            position="0.6 0 0"
+            scale="0.5 0.5 0.5"
+          ></a-image>
+          <a-image
+            src="https://scontent.fgdl14-1.fna.fbcdn.net/v/t39.30808-6/444925024_1005790247570440_8632784547087597289_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFRigGcn_ixFaAhnuQo7yWvUsczqgLNxuNSxzOqAs3G4_RaVcQ73wf9l3PO0sopGr6Ewm3lNf1yROux1i7vehgb&_nc_ohc=PVfX1WgQwe0Q7kNvgGNnBgW&_nc_ht=scontent.fgdl14-1.fna&oh=00_AYAhRwzuQ8evi0RcenslREo8i4nqWoMjz9cyD5k6KtZtjQ&oe=6653E94B"
+            position="0 0 0"
+            scale="0.5 0.5 0.5"
+          ></a-image>
+          <a-image
+            src="https://scontent.fgdl14-1.fna.fbcdn.net/v/t39.30808-6/445355215_764675769183719_5633075194257876338_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHIP-NwV2NdFTlVhl53WmaTjBnomw8cTxeMGeibDxxPF-lK-sVLEGz1aDvTPsu7QlZmxVUohCs__XhlsdpEQK6g&_nc_ohc=3bvBqxeZ4TwQ7kNvgHvp1fw&_nc_ht=scontent.fgdl14-1.fna&oh=00_AYC1SPFiwbLn8oO_uM4_EXKCLL09zbkYxLovo742ewLbPQ&oe=6653FE9A"
+            position="-0.6 0 0"
+            scale="0.5 0.5 0.5"
+          ></a-image>
+        </a-entity>
+
+    
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
